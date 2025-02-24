@@ -5,7 +5,7 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Para el NavBar */
+/* Para el header */
 .navContainer{
   display: flex;
   justify-content: space-around;
@@ -33,9 +33,30 @@
   background-color: red;
 }
 
-/* Para el titulo */
+/* Para el main */
 
 h1 {
   text-align: center;
-  padding-top: 40px;
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Para el Footer */
+footer {
+  text-align: center;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
 }

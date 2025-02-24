@@ -1,7 +1,7 @@
 import './App.css'
 import Navbar from './componentes/Navbar'
 import ItemListContainer from './componentes/ItemListContainer'
-
+import Footer from './componentes/Footer'
 
 function App() {
 
@@ -12,7 +12,10 @@ function App() {
   return (
     <>
       <Navbar/>
+      <main>
       <ItemListContainer greeting={'Bienvenid@'} nombre={usuario.name}/>
+      </main>
+      <Footer/>
     </>
   )
 }
