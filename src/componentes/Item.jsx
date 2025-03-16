@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom'
 const Item = ({producto}) => {
  
   return (
-    <div className='card' style={{width:'10rem', marginTop:15}}>
-        <img className='card-img-top' src={producto.img} alt={producto.name}/>
-        <div className='card-body'>
-            <h5 className='card-title'>{producto.name}</h5>
-            <p className='card-text'>${producto.price}</p>
-            <Link className='btn btn-dark' to={`/item/${producto.id}`}>Ver mas</Link>
+    <div className='card'>
+        <img src={producto.img} alt={producto.name}/>
+        <div className='cardBody'>
+            <h5 className='cardTitle'>{producto.name}</h5>
+            <p className='cardText'>${producto.price}</p>
+            <Link className='botonVer' to={`/item/${producto.id}`}>Ver mas</Link>
         </div>
     </div>
   )

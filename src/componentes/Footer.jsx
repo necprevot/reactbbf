@@ -1,14 +1,14 @@
-import { NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
         <footer>
-            <NavLink>
+            <Link>
             <img src="./facebook.png" alt="Acceso a perfil de Facebook" />
-            </NavLink>
-            <NavLink>
+            </Link>
+            <Link>
             <img src="./instagram.png" alt="Acceso a perfil de Instagram"/>
-            </NavLink>
+            </Link>
             <p className="pFooter">Beardy Boy's Fermentos©<br/>Todos los derechos reservados</p>
         </footer>
     )
