@@ -62,7 +62,7 @@ h2 {
   width: 15rem;
   margin: 15px;
   padding-bottom: 10px ;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 2rem;
 }
 
@@ -71,6 +71,45 @@ h2 {
   border-radius: 2rem;
   padding-top: 0.5rem;
   margin-bottom: 5px;
+}
+
+/* Para detalles de productos */
+
+.itemDetail{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 500px;
+  grid-template-areas:
+  "titulo titulo"
+  "imagen resumen"
+  "imagen resumen"
+  "detalle resumen";
+  justify-items: center;
+}
+
+.tituloDetail {
+  grid-area: titulo;
+}
+
+.imgDetail {
+  grid-area: imagen;
+}
+
+.imgDetail img{
+  height: 20rem;
+}
+
+.parrafoDetail {
+  grid-area: detalle;
+}
+
+.resumenDetail {
+  grid-area: resumen;
+  
+}
+
+.cantidad {
+  justify-items: center;
 }
 
 /* Para el Footer */

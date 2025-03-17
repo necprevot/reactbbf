@@ -7,8 +7,11 @@ const Item = ({producto}) => {
     <div className='card'>
         <img src={producto.img} alt={producto.name}/>
         <div className='cardBody'>
-            <h5 className='cardTitle'>{producto.name}</h5>
-            <p className='cardText'>${producto.price}</p>
+            <h4 className='cardTitle'>{producto.name}</h4>
+            <p className='cardText'>${producto.price.toLocaleString('es-CL', {
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0
+  })}</p>
             <Link className='botonVer' to={`/item/${producto.id}`}>Ver mas</Link>
         </div>
     </div>
