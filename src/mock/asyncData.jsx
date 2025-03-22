@@ -1,36 +1,36 @@
 const productos = [
     {
         id:'01',
-        name:'Random 1',
+        name:'Cerezas al Vinagre',
         price:1000,
-        description: 'lorem lorem lorem',
+        description: 'Un equilibrio perfecto entre dulzura y acidez. Nuestras cerezas al vinagre son una explosión de sabor en cada bocado, ideales para acompañar quesos, ensaladas o carnes. Fermentadas de manera artesanal, conservan su textura y propiedades naturales.',
         stock:10,
         category:'nuevos',
         img:'../logo.png'
     },
     {
         id:'02',
-        name:'Random 2',
+        name:'Chucrut',
         price:2000,
-        description: 'lorem lorem lorem',
+        description: 'El clásico fermentado de repollo, rico en probióticos y con un sabor intenso y ligeramente ácido. Perfecto para acompañar carnes, ensaladas o simplemente disfrutar solo. Elaborado con ingredientes naturales y sin conservantes.',
         stock:50,
         category:'ofertas',
         img:'https://picsum.photos/200'
     },
     {
         id:'03',
-        name:'Random 3',
+        name:'Kimchi',
         price:2500,
-        description: 'lorem lorem lorem',
+        description: 'Auténtico kimchi de receta tradicional, con el nivel justo de picante y fermentado para potenciar su sabor umami. Una opción deliciosa y saludable, ideal para acompañar arroz, sopas o disfrutar como snack.',
         stock:20,
         category:'masvendidos',
         img:'https://picsum.photos/206'
     },
     {
         id:'04',
-        name:'Random 4',
+        name:'Zanahorias Fermentadas',
         price:2000,
-        description: 'lorem lorem lorem',
+        description: 'Crujientes y llenas de sabor, nuestras zanahorias fermentadas son una opción refrescante y nutritiva. Su fermentación natural potencia su sabor ligeramente ácido, perfecto para acompañar platos fríos, carnes o comer como aperitivo.',
         stock:30,
         category:'ofertas',
         img:'https://picsum.photos/204'
