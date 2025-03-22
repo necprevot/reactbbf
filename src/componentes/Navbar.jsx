@@ -10,7 +10,7 @@ const Navbar = () => {
             </NavLink>
             <NavLink className={'navlink'} to='/'>Home</NavLink>
             <NavLink className={'navlink'} to='/category/nuevos'>Nuevos</NavLink>
-            <NavLink className={'navlink'} to='/category/masvendidos'>Mas vendidos</NavLink>
+            <NavLink className={'navlink'} to='/category/mas vendidos'>Mas vendidos</NavLink>
             <NavLink className={'navlink'} to='/category/ofertas'>Ofertas</NavLink>
             <CartWidget className="carrito"/>
         </nav>

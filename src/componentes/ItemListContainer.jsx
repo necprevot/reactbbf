@@ -15,7 +15,7 @@ useEffect(()=>{
     .then((res)=>{
         if(categoryId){
             //filtrar
-            setData(res.filter((item)=> item.category === categoryId))
+            setData(res.filter((item)=> item.category.includes(categoryId)))
         }else{
             setData(res)
         }

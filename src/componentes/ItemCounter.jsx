@@ -3,29 +3,29 @@ import React, { useState } from 'react'
 const ItemCounter = ({stock, onAdd}) => {
     const [count, setCount]= useState(1)
 
-    const add = () => {
+    const anadir = () => {
         if(count < stock){
             setCount(count + 1)
         }
     }
 
-    const substrack = ()=> {
+    const sustraer = ()=> {
         if( count > 0){
             setCount(count - 1)
         }
     }
 
-    const addToCart = () => {
+    const addCarrito = () => {
         onAdd(count)
     }
   return (
     <div>
         <div className='cantidad'>
-            <button className='btn btn-danger' onClick={substrack}>-</button>
-            <span className='btn '>{count}</span>
-            <button className='btn btn-success' onClick={add}>+</button>
+            <button className='botonMenos' onClick={sustraer}>-</button>
+            <span className='cuenta'>{count}</span>
+            <button className='botonMas' onClick={anadir}>+</button>
         </div>
-    <button className='btn btn-primary' disabled={stock === 0 || count === 0} onClick={addToCart}> Agregar al carrito</button>
+    <button className='botonAnadir' disabled={stock === 0 || count === 0} onClick={addCarrito}> Agregar al carrito</button>
     </div>
   )
 }

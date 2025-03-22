@@ -137,7 +137,7 @@ h2 {
   }
 
   .itemDetail > div {
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 20px;
     width: 90%;
@@ -163,12 +163,32 @@ h2 {
     text-align: center;
   }
 
-.tituloDetail { grid-area: titulo; }
+  .itemDetail > .tituloDetail { 
+  grid-area: titulo;
+  border: none;
+ }
 .parrafoDetail { 
   grid-area: detalle;
   margin-top: 30px;
  }
 .cantidad { justify-items: center; }
+
+.botonMenos, .botonMas{
+  background-color: black;
+  color: white;
+  margin: 4px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.botonAnadir{
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 150px;
+  border-radius: 15px;
+}
+
 
 /* Footer */
 footer {

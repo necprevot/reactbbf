@@ -2,8 +2,8 @@ import React from 'react'
 import ItemCounter from './ItemCounter'
 
 const ItemDetail = ({ product }) => {
-  const onAdd = (quantity) => {
-    alert(`Agregaste ${quantity} unidades`)
+  const onAdd = (cantidad) => {
+    alert(`Agregaste ${cantidad} unidades`)
   }
   return (
     <div className='itemDetail'>
