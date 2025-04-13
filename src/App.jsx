@@ -7,7 +7,7 @@ import ItemDetailContainer from './componentes/ItemDetailContainer'
 import Pag404 from './componentes/Pag404'
 import CartContainer from './componentes/CartContainer'
 import { CartProvider } from './context/CartContext'
-import Checkout from './componentes/checkout'
+import Checkout from './componentes/Checkout'
 
 function App() {
 
