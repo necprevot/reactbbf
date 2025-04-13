@@ -7,6 +7,8 @@ const ItemListContainer = ({ greeting }) => {
     
     const { products, loading, error } = useProducts(categoryId)
 
+
+
     return (
         <main>
             <h1 className='text-success'>
