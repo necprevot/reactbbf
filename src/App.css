@@ -226,7 +226,7 @@ footer img {
   color: black;
 }
 
-.pagNoFound .boton, .irHome {
+.pagNoFound .boton, .irHome, .compraRealizada .boton {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -239,21 +239,131 @@ footer img {
 
 /* carrito */
 
-.carrito{
+.carrito {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.titulosCarrito {
   display: grid;
-}
-
-.titulosCarrito{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 2px solid black;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  width: 100%;
+  padding: 15px 0;
+  background-color: black;
+  color: white;
   list-style-type: none;
+  margin: 0;
 }
 
-.itemCarrito{
+.titulosCarrito li {
+  text-align: center;
+  font-weight: bold;
+}
+
+.itemsContainer {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+}
+
+.itemCarrito {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding: 15px 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.itemCarrito:last-child {
+  border-bottom: none;
+}
+
+.itemCarrito p {
+  text-align: center;
+  margin: 0;
+  display: flex;
   align-items: center;
-  border: 2px solid black;
+  justify-content: center;
+}
+
+.borrarItem {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botonesCarrito {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.botonesCarrito .borrarCarrito {
+  background-color: #cc0000;
+  color: white;
+  height: 40px;
+  width: 60%;
+  max-width: 250px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.formulario {
+  max-width: 400px; /* para que no se estire demasiado */
+  margin: 0 auto; /* centrado horizontal */
+  padding: 20px;
+}
+
+.formulario h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* espacio entre elementos */
+}
+
+.formulario input {
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.botonEnviarCompra {
+  background-color: black;
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  white-space: nowrap;
 }
