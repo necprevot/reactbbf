@@ -12,7 +12,7 @@ const Navbar = () => {
             <NavLink className={'navlink'} to='/category/nuevos'>Nuevos</NavLink>
             <NavLink className={'navlink'} to='/category/mas vendidos'>Mas vendidos</NavLink>
             <NavLink className={'navlink'} to='/category/ofertas'>Ofertas</NavLink>
-            <CartWidget className="carrito"/>
+            <NavLink to='/cart'><CartWidget className="carrito"/></NavLink>
         </nav>
         </header>
     )

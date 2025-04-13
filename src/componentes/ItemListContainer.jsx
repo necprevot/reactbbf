@@ -1,8 +1,6 @@
 import ItemList from './ItemList.jsx'
 import { useParams } from 'react-router-dom'
 import { useProducts } from '../hooks/useProducts'
-import { collection , addDoc } from 'firebase/firestore'
-import { db } from '../service/firebase'
 
 const ItemListContainer = ({ greeting }) => {
     const { categoryId } = useParams()
