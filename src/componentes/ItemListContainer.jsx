@@ -10,7 +10,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         <main>
-            <h1 className='text-success'>
+            <h1>
                 {greeting}{categoryId && <span style={{textTransform:'capitalize'}}>{categoryId}</span>}
             </h1>
             
