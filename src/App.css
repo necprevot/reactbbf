@@ -39,14 +39,14 @@ header {
   height: 50px;
 }
 
-.carrito {
+.carritoWidget {
   color: white;
   font-size: 30px;
 }
 
-.carrito span {
-  border-radius: 10px;
-  font-size: 10px;
+.carritoWidget .cuentaCarrito {
+  border-radius: 15px;
+  font-size: 15px;
   background-color: red;
 }
 
@@ -182,11 +182,16 @@ h2 {
 }
 
 .botonAnadir{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
   background-color: black;
   color: white;
   height: 30px;
   width: 150px;
   border-radius: 15px;
+  text-decoration: none;
 }
 
 
@@ -221,7 +226,7 @@ footer img {
   color: black;
 }
 
-.pagNoFound .boton {
+.pagNoFound .boton, .irHome {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
@@ -230,4 +235,25 @@ footer img {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+}
+
+/* carrito */
+
+.carrito{
+  display: grid;
+}
+
+.titulosCarrito{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  list-style-type: none;
+}
+
+.itemCarrito{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
 }

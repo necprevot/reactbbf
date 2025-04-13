@@ -1,14 +1,14 @@
 import { GiShoppingCart } from "react-icons/gi";
-import { CartContext, useCart } from "../context/CartContext";
+import { useCart } from "../context/CartContext";
 
 
 const CartWidget = () => {
     const {cartQuantity} = useCart()
 
     return (
-        <div className="carrito">
+        <div className="carritoWidget">
     <GiShoppingCart color="white" fontSize={'30px'} />
-    { cartQuantity() > 0 && <span>{cartQuantity()}</span> }
+    { cartQuantity() > 0 && <span className="cuentaCarrito">{cartQuantity()}</span> }
     </div>
     )
 }
