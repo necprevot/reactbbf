@@ -123,54 +123,104 @@ h2 {
 }
 
 /* Detalle de productos */
+/* Detalle de productos */
 .itemDetail {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    height: 500px;
-    grid-template-areas:
-      "titulo titulo"
-      "imagen resumen"
-      "imagen resumen"
-      "detalle resumen";
-    justify-items: center;
-    gap: 20px; /* Espaciado entre los elementos */
-  }
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "titulo titulo"
+    "imagen resumen"
+    "detalle resumen";
+  justify-items: center;
+  gap: 20px;
+  min-height: 500px; /* cambiamos height fijo por min-height */
+  padding: 0 20px; /* agregamos padding horizontal */
+  margin-bottom: 30px; /* espacio adicional en la parte inferior */
+}
 
-  .itemDetail > div {
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    padding: 20px;
-    width: 90%;
-  }
+.itemDetail > div {
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  overflow-y: auto; /* permitimos scroll vertical si es necesario */
+}
 
-  .imgDetail {
-    grid-area: imagen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.imgDetail {
+  grid-area: imagen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
-  .imgDetail img {
-    height: 20rem;
-  }
+.imgDetail img {
+  max-height: 20rem;
+  object-fit: contain; /* mantiene la proporción de la imagen */
+  width: auto;
+}
 
-  .resumenDetail {
-    grid-area: resumen;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+.resumenDetail {
+  grid-area: resumen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%; /* ocupa todo el espacio vertical disponible */
+}
 
-  .itemDetail > .tituloDetail { 
+.itemDetail > .tituloDetail { 
   grid-area: titulo;
   border: none;
- }
+}
+
 .parrafoDetail { 
   grid-area: detalle;
-  margin-top: 30px;
- }
+  margin-top: 10px;
+  width: 100%;
+  height: auto; /* altura automática según el contenido */
+  max-height: none; /* eliminamos restricción de altura */
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .itemDetail {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "titulo"
+      "imagen"
+      "resumen"
+      "detalle";
+  }
+  
+  .imgDetail img {
+    height: auto;
+    max-height: 15rem;
+    max-width: 100%;
+  }
+  
+  .parrafoDetail, .resumenDetail {
+    width: 95%;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .itemDetail {
+    padding: 0 10px;
+    gap: 10px;
+  }
+  
+  .imgDetail img {
+    max-height: 12rem;
+  }
+  
+  .itemDetail > div {
+    padding: 15px;
+    width: 95%;
+  }
+}
 .cantidad { justify-items: center; }
 
 .botonMenos, .botonMas{
